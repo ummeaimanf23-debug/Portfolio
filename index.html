@@ -4,81 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umme Aimen - Web Developer & UI/UX Designer</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header/Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#home" class="logo">Umme Aimen</a>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background-color: #1a1a1a !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#home" style="color: #e74c3c; font-size: 24px;">
+                <i class="fas fa-code"></i> Umme Aimen
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero-section py-5" style="background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%); min-height: 100vh; display: flex; align-items: center;">
         <div class="container">
-            <div class="hero-content">
-                <p class="hero-label">Welcome to my portfolio</p>
-                <h1 class="hero-title">Hi, I'm Umme Aimen!</h1>
-                <p class="hero-description">
-                    I'm a passionate Web Developer & UI/UX Designer. I craft beautiful and functional websites that help businesses thrive online. Combining modern design with cutting-edge technology to build awesome digital experiences.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Hire Me</a>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 text-white">
+                    <p class="text-danger fw-bold" style="font-size: 16px; letter-spacing: 1px;">WELCOME TO MY PORTFOLIO</p>
+                    <h1 class="display-4 fw-bold mb-3" style="color: #e74c3c;">Hi, I'm Umme Aimen!</h1>
+                    <p class="lead mb-4" style="font-size: 18px; line-height: 1.8;">
+                        I'm a passionate Web Developer & UI/UX Designer. I craft beautiful and functional websites that help businesses thrive online. Combining modern design with cutting-edge technology to build awesome digital experiences.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#projects" class="btn btn-danger btn-lg fw-bold px-4">
+                            <i class="fas fa-briefcase"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline-danger btn-lg fw-bold px-4">
+                            <i class="fas fa-envelope"></i> Hire Me
+                        </a>
+                    </div>
+                    <div class="d-flex gap-3 mt-4 flex-wrap">
+                        <a href="https://facebook.com" target="_blank" class="text-danger text-decoration-none" style="font-size: 18px;">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="text-danger text-decoration-none" style="font-size: 18px;">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="text-danger text-decoration-none" style="font-size: 18px;">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="text-danger text-decoration-none" style="font-size: 18px;">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/ummeaimanf23-debug" target="_blank" class="text-danger text-decoration-none" style="font-size: 18px;">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
                 </div>
-                <div class="social-links-hero">
-                    <a href="https://facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i> Facebook</a>
-                    <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="https://instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
-                    <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                    <a href="https://github.com/ummeaimanf23-debug" target="_blank" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+                <div class="col-lg-6 col-md-12 text-center">
+                    <img src="https://via.placeholder.com/400x400/2a2a2a/e74c3c?text=Umme+Aimen" alt="Umme Aimen" class="img-fluid rounded-circle border border-danger" style="max-width: 350px; border-width: 3px !important;">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="py-5" style="background-color: #1a1a1a;">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div>
-                    <img src="https://via.placeholder.com/400x400/2a2a2a/e74c3c?text=About+Umme" alt="About Umme Aimen" class="about-image">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-5 col-md-12 mb-4 mb-lg-0 text-center">
+                    <img src="https://via.placeholder.com/400x400/2a2a2a/e74c3c?text=About+Umme" alt="About Umme" class="img-fluid rounded-3" style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
                 </div>
-                <div class="about-text">
-                    <p>Hi! I'm Umme Aimen, a passionate Frontend Web Developer with a strong foundation in web technologies and modern design practices.</p>
-                    <p>I'm a BS Computer Science student dedicated to creating beautiful and functional digital experiences. My expertise spans Web Development and UI/UX Design, allowing me to build products that are both visually appealing and technically sound.</p>
-                    <p>I specialize in HTML, CSS, JavaScript, React, and Figma. I combine creativity with technical skills to design experiences that solve real-world problems. I enjoy crafting interactive web applications and responsive designs that engage users.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Projects Completed</p>
+                <div class="col-lg-7 col-md-12 text-white">
+                    <h2 class="display-5 fw-bold mb-4" style="color: #e74c3c;">About Me</h2>
+                    <p class="mb-3" style="font-size: 16px; line-height: 1.8;">
+                        Hi! I'm Umme Aimen, a passionate Frontend Web Developer with a strong foundation in web technologies and modern design practices.
+                    </p>
+                    <p class="mb-3" style="font-size: 16px; line-height: 1.8;">
+                        I'm a BS Computer Science student dedicated to creating beautiful and functional digital experiences. My expertise spans Web Development and UI/UX Design, allowing me to build products that are both visually appealing and technically sound.
+                    </p>
+                    <p class="mb-4" style="font-size: 16px; line-height: 1.8;">
+                        I specialize in HTML, CSS, JavaScript, React, and Figma. I combine creativity with technical skills to design experiences that solve real-world problems. I enjoy crafting interactive web applications and responsive designs that engage users.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="p-4 rounded-3" style="background-color: #2a2a2a; text-align: center; border: 2px solid #e74c3c;">
+                                <h3 class="h2 fw-bold" style="color: #e74c3c;">50+</h3>
+                                <p class="mb-0">Projects Completed</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <h3>30+</h3>
-                            <p>Happy Clients</p>
+                        <div class="col-md-4">
+                            <div class="p-4 rounded-3" style="background-color: #2a2a2a; text-align: center; border: 2px solid #e74c3c;">
+                                <h3 class="h2 fw-bold" style="color: #e74c3c;">30+</h3>
+                                <p class="mb-0">Happy Clients</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <h3>2+</h3>
-                            <p>Years Experience</p>
+                        <div class="col-md-4">
+                            <div class="p-4 rounded-3" style="background-color: #2a2a2a; text-align: center; border: 2px solid #e74c3c;">
+                                <h3 class="h2 fw-bold" style="color: #e74c3c;">2+</h3>
+                                <p class="mb-0">Years Experience</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,87 +143,97 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="py-5" style="background-color: #121212;">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">HTML5</span>
-                        <span class="skill-percent">95%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">CSS3</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%;"></div>
+            <h2 class="display-5 fw-bold text-center mb-5" style="color: #e74c3c;">My Skills</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-white">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-bold">HTML5</span>
+                            <span style="color: #e74c3c;">95%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 95%; background-color: #e74c3c;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">JavaScript</span>
-                        <span class="skill-percent">88%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 88%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">React</span>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%;"></div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-white">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-bold">CSS3</span>
+                            <span style="color: #e74c3c;">90%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #e74c3c;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Figma</span>
-                        <span class="skill-percent">92%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 92%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">UI/UX Design</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%;"></div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-white">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-bold">JavaScript</span>
+                            <span style="color: #e74c3c;">88%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 88%; background-color: #e74c3c;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Responsive Design</span>
-                        <span class="skill-percent">93%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 93%;"></div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-white">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-bold">React</span>
+                            <span style="color: #e74c3c;">85%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 85%; background-color: #e74c3c;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Git & GitHub</span>
-                        <span class="skill-percent">88%</span>
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-white">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-bold">Figma</span>
+                            <span style="color: #e74c3c;">92%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 92%; background-color: #e74c3c;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 88%;"></div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-white">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-bold">UI/UX Design</span>
+                            <span style="color: #e74c3c;">90%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #e74c3c;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-white">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-bold">Responsive Design</span>
+                            <span style="color: #e74c3c;">93%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 93%; background-color: #e74c3c;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-white">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-bold">Git & GitHub</span>
+                            <span style="color: #e74c3c;">88%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 88%; background-color: #e74c3c;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -175,120 +241,147 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="py-5" style="background-color: #1a1a1a;">
         <div class="container">
-            <h2 class="section-title">My Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
+            <h2 class="display-5 fw-bold text-center mb-5" style="color: #e74c3c;">My Services</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card h-100 bg-dark border-danger text-white" style="transition: all 0.3s ease;">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-code" style="font-size: 50px; color: #e74c3c; margin-bottom: 20px; display: block;"></i>
+                            <h5 class="card-title fw-bold mb-3">Web Development</h5>
+                            <p class="card-text">Custom website development using modern technologies like HTML5, CSS3, JavaScript, React, and frameworks to create responsive and interactive websites.</p>
+                        </div>
                     </div>
-                    <h3>Web Development</h3>
-                    <p>Custom website development using modern technologies like HTML5, CSS3, JavaScript, React, and frameworks to create responsive and interactive websites.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card h-100 bg-dark border-danger text-white" style="transition: all 0.3s ease;">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-mobile-alt" style="font-size: 50px; color: #e74c3c; margin-bottom: 20px; display: block;"></i>
+                            <h5 class="card-title fw-bold mb-3">Responsive Design</h5>
+                            <p class="card-text">Creating websites that look and function perfectly on all devices, from desktops to smartphones, ensuring optimal user experience across all platforms.</p>
+                        </div>
                     </div>
-                    <h3>Responsive Design</h3>
-                    <p>Creating websites that look and function perfectly on all devices, from desktops to smartphones, ensuring optimal user experience across all platforms.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card h-100 bg-dark border-danger text-white" style="transition: all 0.3s ease;">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-paint-brush" style="font-size: 50px; color: #e74c3c; margin-bottom: 20px; display: block;"></i>
+                            <h5 class="card-title fw-bold mb-3">UI/UX Design</h5>
+                            <p class="card-text">Designing intuitive user interfaces and seamless user experiences using Figma and modern design principles that engage visitors and drive conversions.</p>
+                        </div>
                     </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Designing intuitive user interfaces and seamless user experiences using Figma and modern design principles that engage visitors and drive conversions.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="py-5" style="background-color: #121212;">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=StreamVault" alt="StreamVault">
-                    </div>
-                    <div class="project-info">
-                        <h3>StreamVault</h3>
-                        <p>Modern streaming platform with dynamic content and API integration. Built with React and featuring a responsive design.</p>
-                        <div class="project-buttons">
-                            <a href="#" class="btn-project live">View Live</a>
-                            <a href="#" class="btn-project github">GitHub</a>
+            <h2 class="display-5 fw-bold text-center mb-5" style="color: #e74c3c;">My Projects</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card bg-dark text-white h-100 overflow-hidden" style="border: 1px solid #333;">
+                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=StreamVault" class="card-img-top" alt="StreamVault" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: #e74c3c;">StreamVault</h5>
+                            <p class="card-text">Modern streaming platform with dynamic content and API integration. Built with React and featuring a responsive design.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-danger btn-sm flex-grow-1">
+                                    <i class="fas fa-external-link-alt"></i> Live
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm flex-grow-1">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=Book+Store" alt="Online Book Store">
-                    </div>
-                    <div class="project-info">
-                        <h3>Online Book Store</h3>
-                        <p>Fully functional e-commerce platform with shopping cart, payment integration, and user authentication.</p>
-                        <div class="project-buttons">
-                            <a href="#" class="btn-project live">View Live</a>
-                            <a href="#" class="btn-project github">GitHub</a>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card bg-dark text-white h-100 overflow-hidden" style="border: 1px solid #333;">
+                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=Book+Store" class="card-img-top" alt="Book Store" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: #e74c3c;">Online Book Store</h5>
+                            <p class="card-text">Fully functional e-commerce platform with shopping cart, payment integration, and user authentication.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-danger btn-sm flex-grow-1">
+                                    <i class="fas fa-external-link-alt"></i> Live
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm flex-grow-1">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=Food+Website" alt="Food Website">
-                    </div>
-                    <div class="project-info">
-                        <h3>Food Website</h3>
-                        <p>Responsive food website with modern UI, smooth animations, and interactive menu showcase.</p>
-                        <div class="project-buttons">
-                            <a href="#" class="btn-project live">View Live</a>
-                            <a href="#" class="btn-project github">GitHub</a>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card bg-dark text-white h-100 overflow-hidden" style="border: 1px solid #333;">
+                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=Food+Website" class="card-img-top" alt="Food Website" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: #e74c3c;">Food Website</h5>
+                            <p class="card-text">Responsive food website with modern UI, smooth animations, and interactive menu showcase.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-danger btn-sm flex-grow-1">
+                                    <i class="fas fa-external-link-alt"></i> Live
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm flex-grow-1">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=FinWise+App" alt="FinWise App">
-                    </div>
-                    <div class="project-info">
-                        <h3>FinWise App</h3>
-                        <p>Financial management app with dashboard, analytics, and real-time data visualization for better financial planning.</p>
-                        <div class="project-buttons">
-                            <a href="#" class="btn-project live">View Live</a>
-                            <a href="#" class="btn-project github">GitHub</a>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card bg-dark text-white h-100 overflow-hidden" style="border: 1px solid #333;">
+                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=FinWise+App" class="card-img-top" alt="FinWise App" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: #e74c3c;">FinWise App</h5>
+                            <p class="card-text">Financial management app with dashboard, analytics, and real-time data visualization for better planning.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-danger btn-sm flex-grow-1">
+                                    <i class="fas fa-external-link-alt"></i> Live
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm flex-grow-1">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=JazzCash" alt="JazzCash Redesign">
-                    </div>
-                    <div class="project-info">
-                        <h3>JazzCash Redesign</h3>
-                        <p>Mobile payment interface redesign with improved UX, modern design patterns, and enhanced user journey.</p>
-                        <div class="project-buttons">
-                            <a href="#" class="btn-project live">View Live</a>
-                            <a href="#" class="btn-project github">GitHub</a>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card bg-dark text-white h-100 overflow-hidden" style="border: 1px solid #333;">
+                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=JazzCash" class="card-img-top" alt="JazzCash" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: #e74c3c;">JazzCash Redesign</h5>
+                            <p class="card-text">Mobile payment interface redesign with improved UX, modern design patterns, and enhanced user journey.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-danger btn-sm flex-grow-1">
+                                    <i class="fas fa-external-link-alt"></i> Live
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm flex-grow-1">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=Demon+Slayer" alt="Demon Slayer Website">
-                    </div>
-                    <div class="project-info">
-                        <h3>Demon Slayer Website</h3>
-                        <p>Engaging fan website with smooth animations, interactive elements, and immersive storytelling design.</p>
-                        <div class="project-buttons">
-                            <a href="#" class="btn-project live">View Live</a>
-                            <a href="#" class="btn-project github">GitHub</a>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card bg-dark text-white h-100 overflow-hidden" style="border: 1px solid #333;">
+                        <img src="https://via.placeholder.com/400x250/2a2a2a/e74c3c?text=Demon+Slayer" class="card-img-top" alt="Demon Slayer" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: #e74c3c;">Demon Slayer Website</h5>
+                            <p class="card-text">Engaging fan website with smooth animations, interactive elements, and immersive storytelling design.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-danger btn-sm flex-grow-1">
+                                    <i class="fas fa-external-link-alt"></i> Live
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm flex-grow-1">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -297,34 +390,152 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="py-5" style="background-color: #1a1a1a;">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p style="color: #cccccc; margin-bottom: 50px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            <h2 class="display-5 fw-bold text-center mb-5 text-white" style="color: #e74c3c !important;">Get In Touch</h2>
+            
+            <p class="text-center text-secondary mb-5 mx-auto" style="max-width: 600px;">
                 I'm interested in freelance opportunities - especially ambitious or large projects. However, if you have other requests or questions, don't hesitate to contact me.
             </p>
-            <form class="contact-form" id="contactForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Subject" required>
-                <textarea placeholder="Your Message" rows="6" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-            <div style="margin-top: 50px; color: #cccccc;">
-                <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
-                <p><i class="fas fa-envelope"></i> ummeaimanf23@gmail.com</p>
-                <p><i class="fas fa-phone"></i> +92-XXXXXXXXX</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-white">
+                        <h5 class="fw-bold mb-4" style="color: #e74c3c;">Contact Information</h5>
+                        
+                        <div class="mb-4">
+                            <p class="mb-2">
+                                <i class="fas fa-map-marker-alt" style="color: #e74c3c; width: 30px;"></i>
+                                <strong>Location:</strong> Karachi, Pakistan
+                            </p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <p class="mb-2">
+                                <i class="fas fa-envelope" style="color: #e74c3c; width: 30px;"></i>
+                                <strong>Email:</strong> ummeaimanf23@gmail.com
+                            </p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <p class="mb-2">
+                                <i class="fas fa-phone" style="color: #e74c3c; width: 30px;"></i>
+                                <strong>Phone:</strong> +92-XXXXXXXXX
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h6 class="fw-bold mb-3" style="color: #e74c3c;">Follow Me</h6>
+                            <div class="d-flex gap-3">
+                                <a href="https://facebook.com" target="_blank" class="btn btn-danger btn-sm">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" class="btn btn-danger btn-sm">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" class="btn btn-danger btn-sm">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" class="btn btn-danger btn-sm">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/ummeaimanf23-debug" target="_blank" class="btn btn-danger btn-sm">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-12">
+                    <form id="contactForm" class="bg-dark p-4 rounded-3" style="border: 1px solid #333;">
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-white fw-bold">Your Name</label>
+                            <input type="text" class="form-control bg-secondary border-0 text-white" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-white fw-bold">Your Email</label>
+                            <input type="email" class="form-control bg-secondary border-0 text-white" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="subject" class="form-label text-white fw-bold">Subject</label>
+                            <input type="text" class="form-control bg-secondary border-0 text-white" id="subject" name="subject" placeholder="Enter subject" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-white fw-bold">Message</label>
+                            <textarea class="form-control bg-secondary border-0 text-white" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-danger btn-lg w-100 fw-bold">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="bg-dark text-center py-4 border-top" style="border-color: #e74c3c !important;">
         <div class="container">
-            <p>&copy; 2026 Umme Aimen Portfolio. All Rights Reserved.</p>
+            <p class="text-secondary mb-0">
+                &copy; 2026 <span style="color: #e74c3c;">Umme Aimen Portfolio</span>. All Rights Reserved.
+            </p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
     <script src="script.js"></script>
+    
+    <!-- Contact Form Handler -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
